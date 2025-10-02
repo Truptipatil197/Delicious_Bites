@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Bites Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+    <div class="logo">
+      <img src="https://cdn-icons-png.flaticon.com/512/3075/3075977.png" alt="Delicious Bites Logo" class="logo-img">
+      Delicious Bites
+    </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#reservation">Reservation</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-text">
+            <h1>Welcome to Delicious Bites</h1>
+            <p>Where Every Bite Tells a Story.!</p>
+            <a href="#menu" class="btn">Explore Menu</a>
+        </div>
+    </section>
+
+
+<!-- Menu Section -->
+<section id="menu" class="menu-section">
+  <h2>Our Menu</h2>
+
+  <!-- Category Tabs -->
+  <div class="menu-tabs sticky">
+    <button class="tab-btn active" data-category="starters">Starters</button>
+    <button class="tab-btn" data-category="main">Main Course</button>
+    <button class="tab-btn" data-category="desserts">Desserts</button>
+    <button class="tab-btn" data-category="drinks">Drinks</button>
+  </div>
+
+  <div class="menu-items" id="menu-items">
+    <!-- ===== Starters ===== -->
+    <div class="menu-item" data-category="starters">
+      <div class="menu-card">
+        <img src="https://media.istockphoto.com/id/2148933061/photo/selective-focus-samosa-spiced-potato-filled-pastry-crispy-savory-popular-indian-snack-with.webp?a=1&b=1&s=612x612&w=0&k=20&c=oGvjgDIBF6mZr_66QT2ZMPeZ2HT9I_sxCuLiZy1mjnM=" alt="Samosa">
+        <div class="menu-info">
+          <h3>Samosa</h3>
+          <div class="menu-rating">★★★★☆</div>
+          <p>Crispy pastry filled with spicy potato and peas.</p>
+          <span class="price">₹120</span>
+          <button class="order-btn">Order Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-item" data-category="starters">
+      <div class="menu-card">
+        <img src="https://media.istockphoto.com/id/2207965708/photo/deep-fried-spring-rolls-with-salad-as-an-appetizer.webp?a=1&b=1&s=612x612&w=0&k=20&c=0VVGkREbRTv73WGU10sey1AeDg3d6Vza06NQAprpbn8=" alt="Spring Rolls">
+        <div class="menu-info">
+          <h3>Spring Rolls</h3>
+          <div class="menu-rating">★★★★★</div>
+          <p>Vegetable-filled crispy rolls with sweet chili sauce.</p>
+          <span class="price">₹180</span>
+          <button class="order-btn">Order Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-item" data-category="starters">
+      <div class="menu-card">
+        <img src="https://media.istockphoto.com/id/2190649888/photo/tasty-toasts-with-garlic-homemade-products-appetizer.jpg?s=612x612&w=0&k=20&c=nMG3zvaB0mkzU61ZMwBbEWZJmyt7aBfJ23NWuYZ7pyU=" alt="Garlic Bread">
+        <div class="menu-info">
+          <h3>Garlic Bread</h3>
+          <div class="menu-rating">★★★☆☆</div>
+          <p>Freshly baked bread with garlic butter.</p>
+          <span class="price">₹150</span>
+          <button class="order-btn">Order Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-item" data-category="starters">
+      <div class="menu-card">
+        <img src="https://media.istockphoto.com/id/1156480756/photo/avocado-toast-with-feta-and-tomatoes-smorrebrod-with-ricotta-top-view.webp?a=1&s=612x612&w=0&k=20&c=kEnY6MUo9lUWd3UW9of-93I8ou8vdgVahTE3Y4CIWYY=" alt="Bruschetta">
+        <div class="menu-info">
+          <h3>Bruschetta</h3>
+          <div class="menu-rating">★★★★★</div>
+          <p>Grilled bread with tomato, basil, and olive oil.</p>
+          <span class="price">₹250</span>
+          <button class="order-btn">Order Now</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== Main Course ===== -->
+    <div class="menu-item" data-category="main">
+      <div class="menu-card">
+        <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8TWFyZ2hlcml0YSUyMFBpenphfGVufDB8fDB8fHww" alt="Pizza">
+        <div class="menu-info">
+          <h3>Margherita Pizza</h3>
+          <div class="menu-rating">★★★★★</div>
+          <p>Classic Italian pizza with mozzarella and tomato.</p>
+          <span class="price">₹450</span>
+          <button class="order-btn">Order Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-item" data-category="main">
+      <div class="menu-card">
+        <img src="https://images.unsplash.com/photo-1690401769082-5f475f87fb22?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8UGFuZWVyJTIwQnV0dGVyJTIwTWFzYWxhfGVufDB8fDB8fHww" alt="Paneer Butter Masala">
+        <div class="menu-info">
+          <h3>Paneer Butter Masala</h3>
+          <div class="menu-rating">★★★★☆</div>
+          <p>Creamy tomato-based Indian cottage cheese curry.</p>
+          <span class="price">₹350</span>
+          <button class="order-btn">Order Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-item" data-category="main">
+      <div class="menu-card">
+        <img src="https://images.unsplash.com/photo-1676436293945-a613dde9c3b6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDd8fHxlbnwwfHx8fHw%3D" alt="Biryani">
+        <div class="menu-info">
+          <h3>Chicken Biryani</h3>
+          <div class="menu-rating">★★★★★</div>
+          <p>Fragrant rice with spiced chicken and herbs.</p>
+          <span class="price">₹500</span>
+          <button class="order-btn">Order Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-item" data-category="main">
+      <div class="menu-card">
+        <img src="https://media.istockphoto.com/id/1142391463/photo/pasta-carbonara.webp?a=1&b=1&s=612x612&w=0&k=20&c=JQzF3EBMOs06KMLskSGV_P0rhzl7oFeoEV8Uq-1w_Vk=" alt="Pasta">
+        <div class="menu-info">
+          <h3>Spaghetti Carbonara</h3>
+          <div class="menu-rating">★★★☆☆</div>
+          <p>Creamy pasta with pancetta and parmesan.</p>
+          <span class="price">₹400</span>
+          <button class="order-btn">Order Now</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== Desserts ===== -->
+    <div class="menu-item" data-category="desserts">
+      <div class="menu-card">
+        <img src="https://images.unsplash.com/photo-1626263468007-a9e0cf83f1ac?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y2hvY29sYXRlJTIwY2FrZXxlbnwwfHwwfHx8MA%3D%3D" alt="Chocolate Cake">
+        <div class="menu-info">
+          <h3>Chocolate Cake</h3>
+          <div class="menu-rating">★★★★★</div>
+          <p>Rich and creamy chocolate cake with ganache.</p>
+          <span class="price">₹250</span>
+          <button class="order-btn">Order Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-item" data-category="desserts">
+      <div class="menu-card">
+        <img src="https://media.istockphoto.com/id/1394553388/photo/gulab-jamun-on-gray-background.jpg?s=612x612&w=0&k=20&c=26HDLLS4592tCjEKaQdPjZLPp3Z5mgp1iUr0YWGi9wQ=" alt="Gulab Jamun">
+        <div class="menu-info">
+          <h3>Gulab Jamun</h3>
+          <div class="menu-rating">★★★★☆</div>
+          <p>Soft Indian sweet balls soaked in sugar syrup.</p>
+          <span class="price">₹150</span>
+          <button class="order-btn">Order Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-item" data-category="desserts">
+      <div class="menu-card">
+        <img src="https://media.istockphoto.com/id/2228780142/photo/rasmalai-is-a-soft-spongy-dessert-made-from-chenna-or-paneer-soaked-in-creamy-saffron-milk.jpg?s=612x612&w=0&k=20&c=ryMcyB63DhmAOlnowQMEN5DITWcwF7xAipV-Bo5aTeM=" alt="Rasmalai">
+        <div class="menu-info">
+          <h3>Rasmalai</h3>
+          <div class="menu-rating">★★★☆☆</div>
+          <p>Cottage cheese dumplings in sweetened milk.</p>
+          <span class="price">₹180</span>
+          <button class="order-btn">Order Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-item" data-category="desserts">
+      <div class="menu-card">
+        <img src="https://media.istockphoto.com/id/931702864/photo/chocolate-ice-cream-in-a-glass-bowl.jpg?s=612x612&w=0&k=20&c=iCBCpOK4YJSj1jqV02W9f1dGywrdUzpH05JQvvOkWvU=" alt="Ice Cream">
+        <div class="menu-info">
+          <h3>Ice Cream Sundae</h3>
+          <div class="menu-rating">★★★★★</div>
+          <p>Vanilla ice cream with chocolate syrup and nuts.</p>
+          <span class="price">₹200</span>
+          <button class="order-btn">Order Now</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== Drinks ===== -->
+    <div class="menu-item" data-category="drinks">
+      <div class="menu-card">
+        <img src="https://media.istockphoto.com/id/1336601313/photo/top-view-of-indian-herbal-masala-chai-or-traditional-beverage-tea-with-milk-and-spices-kerala.jpg?s=612x612&w=0&k=20&c=txjXqXtu3_PcA0ztNxyNVXJ-YziORr2XnuHWIriNEKk=" alt="Masala Chai">
+        <div class="menu-info">
+          <h3>Masala Chai</h3>
+          <div class="menu-rating">★★★★☆</div>
+          <p>Spiced Indian tea brewed with milk.</p>
+          <span class="price">₹50</span>
+          <button class="order-btn">Order Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-item" data-category="drinks">
+      <div class="menu-card">
+        <img src="https://media.istockphoto.com/id/1877464161/photo/coffee-and-chocolate-drink-with-cream-on-a-brown-background.jpg?s=612x612&w=0&k=20&c=PQ6BoKugIc_HOMS3Thli707c_nuHx72keXotPJ8vYqk=" alt="Coffee">
+        <div class="menu-info">
+          <h3>Espresso Coffee</h3>
+          <div class="menu-rating">★★★★★</div>
+          <p>Strong, aromatic espresso coffee.</p>
+          <span class="price">₹80</span>
+          <button class="order-btn">Order Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-item" data-category="drinks">
+      <div class="menu-card">
+        <img src="https://media.istockphoto.com/id/1313705835/photo/refreshing-summer-alcoholic-cocktail-mojito-with-ice-fresh-mint-and-lime.jpg?s=612x612&w=0&k=20&c=ITcd6IOtSGl_CRjqlEH5pTK00k11SIoIGv_wGaHtyi4=" alt="Lemonade">
+        <div class="menu-info">
+          <h3>Fresh Lemonade</h3>
+          <div class="menu-rating">★★★☆☆</div>
+          <p>Refreshing lemonade made with fresh lemons.</p>
+          <span class="price">₹60</span>
+          <button class="order-btn">Order Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-item" data-category="drinks">
+      <div class="menu-card">
+        <img src="https://media.istockphoto.com/id/1217751035/photo/fresh-mango-juice-and-mango-fruit.jpg?s=612x612&w=0&k=20&c=c1-FwJgAvSzZxCanQonr5VvWJW1zIVithTuUSk4A5KI=" alt="Mango Smoothie">
+        <div class="menu-info">
+          <h3>Mango Smoothie</h3>
+          <div class="menu-rating">★★★★★</div>
+          <p>Fresh mango smoothie with yogurt.</p>
+          <span class="price">₹100</span>
+          <button class="order-btn">Order Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=400&q=80" alt="Chef">
+            <div>
+                <p>Delicious Bites is dedicated to serving high-quality meals with fresh ingredients and exceptional service. Our chef, <b>Antonio Rossi</b>, brings a touch of Italy to every dish. Join us for a delightful dining experience!</p>
+                <div class="chef-signature">Chef Antonio <span>👨‍🍳</span></div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <h2>What Our Guests Say</h2>
+        <div class="testimonials-slider">
+            <div class="testimonial active">
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Priya S.">
+                <p>"The food was absolutely wonderful, from preparation to presentation!"</p>
+                <span>- Priya S.</span>
+            </div>
+            <div class="testimonial">
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Rahul K.">
+                <p>"A delightful experience. The staff was friendly and the ambiance perfect."</p>
+                <span>- Rahul K.</span>
+            </div>
+            <div class="testimonial">
+                <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Anjali M.">
+                <p>"Best restaurant in town! Highly recommended for family dinners."</p>
+                <span>- Anjali M.</span>
+            </div>
+        </div>
+    </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="gallery-section">
+    <h2>Our Gallery</h2>
+    <div class="gallery-grid">
+      <img src="https://images.unsplash.com/photo-1737134871761-bdf132724a7f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHJlc3R1YXJhbnR8ZW58MHx8MHx8fDA%3D" alt="Fine Dining Table">
+      <img src="https://images.unsplash.com/photo-1572302920907-288481a7835e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Garden area">
+      <img src="https://media.istockphoto.com/id/1388761872/photo/restaurant-outdoor.jpg?s=612x612&w=0&k=20&c=N0JxHqCobzTa_V7ztdHTiHmZJa76Eei_bS4o4rmc45k=" alt="Restaurant Interior">
+      <img src="https://media.istockphoto.com/id/1298048046/photo/night-sky-rooftop-with-light.jpg?s=612x612&w=0&k=20&c=g-z0JtcKMVy2XHQOuXn2AmKp6GQWD6cMwXexGIj8OYo=" alt="Night viewport">
+      <img src="https://media.istockphoto.com/id/1131393938/photo/very-stylish-indian-gourmet-restaurant.webp?a=1&b=1&s=612x612&w=0&k=20&c=Nja6_FL1Ww89l03D-Nyex4f-3PBN_IYfDp_6J3UH5Cs=" alt="Elegant table setting">
+      <img src="https://images.unsplash.com/photo-1707202282188-f8d03b2791b5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGNoZWYlMjBhdCUyMHdvcmt8ZW58MHx8MHx8fDA%3D" alt="Chef at Work">
+    </div>
+  </section>
+    <!-- Reservation Section -->
+    <section id="reservation" class="reservation-section">
+        <h2>Make a Reservation</h2>
+        <form class="reservation-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="date" required>
+            <input type="time" required>
+            <input type="number" placeholder="Number of Guests" min="1" required>
+            <button type="submit">Reserve Now</button>
+        </form>
+    </section>
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <h2>Subscribe to Our Newsletter</h2>
+        <form class="newsletter-form">
+            <input type="email" placeholder="Your Email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="contact-info">
+            <p>Email: info@deliciousbites.com</p>
+            <p>Phone: +91 98765 43210</p>
+            <p>Address: 123 Main Street, Your City</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019019145409!2d-122.4194151846812!3d37.7749297797597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808c7e2b1b1b%3A0x4a0b0b0b0b0b0b0b!2sSan+Francisco%2C+CA!5e0!3m2!1sen!2sus!4v1633072800000!5m2!1sen!2sus" width="100%" height="180" style="border:0; border-radius:10px; margin-top:20px;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-social">
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter"></a>
+        </div>
+        <p>&copy; 2025 Delicious Bites. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
