@@ -6,7 +6,7 @@ This project is designed as a portfolio piece, featuring a stylish food menu, sm
 ---
 
 ## 🚀 Live Demo
-👉 [View Website](https://your-username.github.io/delicious-bites/)  
+👉https://truptipatil197.github.io/Delicious_Bites
 
 ---
 
